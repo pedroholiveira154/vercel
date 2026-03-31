@@ -1,4 +1,4 @@
-// Funções de redirecionamento com tratamento de segurança e abertura na mesma aba (conforme comportamento original)
+
     function direcionar1() {
         window.location.href = 'https://atv1.gt.tc/atv_hospedagem/index.php?authuser=0';
     }
@@ -15,7 +15,7 @@
         window.location.href = 'https://docs.google.com/document/d/1ub3MK0i92R1vYLDwjlVUJeoVj3vFXyuVGzCiuAcrnxs/edit?tab=t.0';
     }
 
-    // Suporte para acessibilidade via teclado: adicionar evento Enter/Space para cards
+    // Suporte para acessibilidade via teclado
     document.querySelectorAll('.link-card').forEach(card => {
         card.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
@@ -25,5 +25,4 @@
         });
     });
 
-    // opcional: log amigável no console para verificação (apenas desenvolvimento)
     console.log("Página carregada — todos os links ativos e prontos para apresentação.");
